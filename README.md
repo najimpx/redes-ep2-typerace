@@ -4,7 +4,7 @@ Repositório para o EP2 de Redes de Computadores, EACH-USP - 2021/2
 # Integrantes
 * Fábio Kiyoshi Ichimura - 10687580
 * Integrante 2 - 2222222
-* Integrante 3 - 3333333
+* Rafael Nazima - 11208311
 * Integrante 4 - 4444444
 
 ## Pré-requisitos
