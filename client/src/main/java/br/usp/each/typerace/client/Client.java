@@ -2,6 +2,7 @@ package br.usp.each.typerace.client;
 
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
+import org.jetbrains.annotations.NotNull;
 
 import java.net.URI;
 
@@ -13,21 +14,32 @@ public class Client extends WebSocketClient {
 
     @Override
     public void onOpen(ServerHandshake handshakedata) {
-        // TODO: Implementar
+        System.out.println("Conexão criada!\n");
     }
 
     @Override
     public void onMessage(String message) {
-        // TODO: Implementar
+        System.out.println("\u001b[H\u001b[2J");
+        System.out.println("\nMessagem recebida :" + message);
     }
 
     @Override
     public void onClose(int code, String reason, boolean remote) {
-        // TODO: Implementar
+        System.out.println("\u001b[H\u001b[2J");
+        if (code == 1000) {
+            System.out.println("Desconectado");
+        }
+        else {
+            System.out.println("Desconexão  anormal");
+        }
+
+        System.out.println("Motivo: "+reason);
     }
 
     @Override
-    public void onError(Exception ex) {
-        // TODO: Implementar
+    public void onError(@NotNull Exception ex) {
+        System.out.println("\u001b[H\u001b[2J");
+        System.out.println("Erro");
+        ex.printStackTrace();
     }
 }
