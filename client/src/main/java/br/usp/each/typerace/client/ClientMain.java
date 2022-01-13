@@ -2,8 +2,6 @@ package br.usp.each.typerace.client;
 
 import org.java_websocket.client.WebSocketClient;
 
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
