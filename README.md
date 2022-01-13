@@ -5,7 +5,7 @@ Repositório para o EP2 de Redes de Computadores, EACH-USP - 2021/2
 * Fábio Kiyoshi Ichimura - 10687580
 * Pedro Araújo Sousa - 11796527
 * Rafael Nazima - 11208311
-* Integrante 4 - 4444444
+
 
 ## Pré-requisitos
 * JDK 11 ou maior (testado com a JDK11 OpenJDK)
