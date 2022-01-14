@@ -84,7 +84,19 @@ public class ClientMain {
                     nomeDoServer = nomeServer;
                     break;
                 case 3:
-                    if (idDoCliente.isBlank()||nomeDoServer.isBlank()){
+                    if (!idDoCliente.isBlank()||!nomeDoServer.isBlank()){
+                        try {
+                        	client = new Client(new URI("ws://"+nomeDoServer));
+                        	init(idDoCliente);
+
+                    		String input = "teste";
+                            // ainda nao implementado
+                            client.send(input);
+                        }
+                        catch(Exception e) {
+                        	System.out.println(e);
+                        }
+                    	
                         break;
                     }
                     break;
