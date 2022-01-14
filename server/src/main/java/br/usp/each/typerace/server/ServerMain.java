@@ -18,11 +18,16 @@ public class ServerMain {
     }
 
     public static void main(String[] args) {
-        WebSocketServer server = new Server(8080, new HashMap<>());
+        Scanner scan = new Scanner(System.in);
+    	System.out.println("Digite o valor da porta");
+    	door = Integer.parseInt(scan.nextLine());
+       
+        WebSocketServer server = new Server(door, new HashMap<>());
 
         ServerMain main = new ServerMain(server);
 
         main.init();
+        scan.close();
     }
 
 }
