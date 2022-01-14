@@ -60,11 +60,9 @@ public class Jogo {
         if(listaDePalavras[n].equals(palavraTentada)){//acerto
             jogador.adicionaAcerto();
             if(jogador.getposicaoLista() == listaDePalavras.length - 1){// finalizou
-                System.out.println((61));
                 jogador.setPosicaoDaLista(0);
             }
             if (jogador.getAcertos() == this.getMaxScore()) {
-                System.out.println((65));
                 removeJogador(jogador);
                 if (jogadoresParticipando == 0) this.iniciado = false;
             }
