@@ -14,20 +14,13 @@ public class ServerMain {
 
     public void init() {
         System.out.println("Iniciando servidor...");
-        // TODO: Implementar
+        server.start();
     }
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-    	System.out.println("Digite o valor da porta");
-    	door = Integer.parseInt(scan.nextLine());
-       
-        WebSocketServer server = new Server(door, new HashMap<>());
-
+        WebSocketServer server = new Server(8080, new HashMap<>());
         ServerMain main = new ServerMain(server);
-
         main.init();
-        scan.close();
     }
 
 }
