@@ -21,3 +21,7 @@ Para rodar um cliente
 ```sh
 ./gradlew client:run
 ```
+O servidor está programado para utilizar a porta 8080, utilizando o servidor ws://localhost:8080.
+Após iniciar o servidor rodar os clientes e seguir as instruções do console, utilizando os números indicados no terminal.
+
+
