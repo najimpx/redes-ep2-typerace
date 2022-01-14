@@ -1,7 +1,6 @@
 package br.usp.each.typerace.client;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
-import org.jetbrains.annotations.NotNull;
 
 import java.net.URI;
 
@@ -36,7 +35,7 @@ public class Client extends WebSocketClient {
     }
 
     @Override
-    public void onError(@NotNull Exception ex) {
+    public void onError(Exception ex) {
         System.out.println("\u001b[H\u001b[2J");
         System.out.println("Erro");
         ex.printStackTrace();
